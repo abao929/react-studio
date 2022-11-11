@@ -30,7 +30,7 @@ function App() {
           onMouseEnter={() => setOpen(true)}
           onMouseLeave={() => setOpen(false)}
         >
-          <h2>Cart</h2>
+          <h2>Cart: {cartItems.length}</h2>
           <div className={`content ${open ? 'active' : 'hidden'}`}>
             <div className="cart-items">
               {cartItems.map((item, index) => (
